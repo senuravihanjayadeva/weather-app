@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <center>
+
+
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get your weather</p>
+
+            <form>
+
+                <input type="text" placeholder="Enter City">
+                <button>Search</button>
+
+            </form>
+
+            <p id="message-one"></p>
+            <p id="message-two"></p>
+            <div id="imgDiv">
+                <img style="width:100px; height:100px;" id="imgId" src="./img/icon.png" />
+            </div>
+
+        </div>
+    </center>
+
+    <center>
+        {{>footer}}
+    </center>
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
