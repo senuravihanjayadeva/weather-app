@@ -23,7 +23,9 @@ const forecast = (latitude, longitude, callback) => {
         //1st element of the array
         "It is currently " +
           body.current.temp +
-          " degree out. There is a " +
+          " degree out. Wind speed is " +
+          body.current.wind_speed +
+          "metre/sec. There is a " +
           body.current.humidity +
           "% humidity  " +
           " and " +
